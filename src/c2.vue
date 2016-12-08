@@ -12,8 +12,10 @@
   }
 </script>
 
-<style>
+<style lang="stylus">
   .c2 {
-    color: #666;
+    &b {
+      color: #666;
+    }
   }
 </style>
