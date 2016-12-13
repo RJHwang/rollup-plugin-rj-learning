@@ -28,7 +28,8 @@
     "clean": "rm -rf dist test/temp",
     "test": "ava test/index.js",
     "pretest": "npm run build",
-    "build": "rollup -c -f umd -n tryRollup -o dist/try-rollup.umd.js && rollup -c -f es -o dist/try-rollup.es.js",
+    "build": " rollup -c -f es -o dist/try-rollup.es.js",
+    "buildAll": " rollup -c -f es -o dist/try-rollup.es.js && rollup -c -f umd -n tryRollup -o dist/try-rollup.umd.js",
     "prepublish": "npm test"
   },
   "dependencies": {
@@ -43,8 +44,8 @@
     "rollup-plugin-css-porter": "^0.1.1",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-postcss": "^0.2.0",
-    "rollup-plugin-stylus-compiler": "^0.1.1",
+    "rollup-plugin-stylus-compiler": "^0.2.0",
     "rollup-plugin-vue": "^2.2.10",
-    "rollup-plugin-vue2": "^0.6.0"
+    "rollup-plugin-vue2": "^0.6.1"
   }
 }

@@ -9,8 +9,5 @@ var external = Object.keys(require('./package.json').dependencies);
 export default {
   entry: 'src/index.vue',
   external: external,
-  plugins: [vue(), stylus(), css(), nodeResolve({
-    jsnext: true,
-    main: true
-  }), buble()]
+  plugins: [vue(), stylus(), css({minified: false})]
 };
