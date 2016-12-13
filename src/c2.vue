@@ -3,19 +3,17 @@
 </template>
 
 <script>
-  export default {
-    data: function() {
-      return {
-        name: 'Component 2'
-      }
+export default {
+  data: function() {
+    return {
+      name: 'Component 2'
     }
   }
+}
 </script>
 
 <style lang="stylus">
-  .c2 {
-    &b {
-      color: #666;
-    }
-  }
+.c2
+  .b
+    color #666
 </style>
